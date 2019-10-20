@@ -4,6 +4,13 @@
   "description": "Example code for react async data storage library",
   "private": true,
   "main": "src/index.js",
+  "browserslist": {
+    "production": ">0.1%, safari >= 10, ie >= 11",
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version"
+    ]
+  },
   "scripts": {
     "build": "cross-env NODE_ENV=development webpack",
     "serve": "cross-env NODE_ENV=development webpack-dev-server --open"

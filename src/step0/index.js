@@ -22,13 +22,11 @@ export default class Step0 extends PureComponent<void, StateType> {
       ],
     };
 
-    this.handleAdd = event => {
-      event.preventDefault();
+    this.handleAdd = () => {
       this.setState( state => ( {
         tasks: [ ...state.tasks, { id: counter(), text: state.newTaskText } ],
         newTaskText: '',
       } ) );
-      return false;
     };
     this.handleDeleteF = ( idToDelete : number ) => () => this.setState( state => ( {
       tasks: state.tasks.filter( ( { id } ) => id !== idToDelete ),
@@ -39,7 +37,9 @@ export default class Step0 extends PureComponent<void, StateType> {
   }
 
   render() {
-    return <Form onSubmit={this.handleAdd}>
+    return <>
+      <h1>Вариант с хранением списка задач в компоненте</h1>
+      <h2>Обработка списка задач и отображение в одном компоненте</h2>
       <Table bordered hover striped>
         <thead><tr>
           <th>#</th><th>Text</th><th />
@@ -60,11 +60,14 @@ export default class Step0 extends PureComponent<void, StateType> {
               placeholder="Текст новой задачи"
               type="text"
               value={this.state.newTaskText || ''} /></td>
-            <td><Button type="submit" variant="primary">Добавить</Button></td>
+            <td><Button
+              onClick={this.handleAdd}
+              type="button"
+              variant="primary">Добавить</Button></td>
           </tr>
         </tbody>
       </Table>
-    </Form>;
+    </>;
   }
 
 }
