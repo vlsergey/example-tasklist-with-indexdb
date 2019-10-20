@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Version: <%= htmlWebpackPlugin.options.version %> -->
+<html lang="ru">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Страница с примерами работы TaskList вместе с IndexDB</title>
+    <style type="text/css">
+      html, body {min-height: 100vh;}
+      body { display: flex }
+      body > * { width: 100%; min-height: 100%; flex: 0 0 100% }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Temporary displayed until root React element is loaded -->
+      <div style="align-items: center; background-color: rgb(241, 241, 241); height: 100%; display: flex; flex-direction: column;">
+        <div style="margin-bottom: auto;"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-3" style="background-color: white; padding: 80px; border-radius: 10px;">
+              <div role="alert" class="fade alert alert-info show">
+                <h4><span role="status" class="spinner-border " style="vertical-align: middle;"></span>&nbsp;&nbsp;Загрузка&#8230;</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: auto;">
+          <div style="padding: 10px;">Версия: <%= htmlWebpackPlugin.options.version %></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

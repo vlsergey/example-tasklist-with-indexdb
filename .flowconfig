@@ -1,0 +1,8 @@
+[lints]
+untyped-import=off
+unclear-type=off
+
+[options]
+module.name_mapper='^react\-bootstrap\/.*' -> 'react-bootstrap'
+
+module.name_mapper='^common' ->'<PROJECT_ROOT>/src/common'

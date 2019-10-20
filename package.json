@@ -1,0 +1,71 @@
+{
+  "name": "example-tasklist-with-indexdb",
+  "version": "1.0.0",
+  "description": "Example code for react async data storage library",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development webpack-dev-server --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlsergey/example-tasklist-with-indexdb.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "async"
+  ],
+  "author": "Sergey Vladimirov a.k.a. vlsergey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vlsergey/example-tasklist-with-indexdb/issues"
+  },
+  "homepage": "https://github.com/vlsergey/example-tasklist-with-indexdb#readme",
+  "dependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.6.3",
+    "autoprefixer": "^9.6.5",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-flow-runtime": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^3.3.2",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.4.0",
+    "eslint-loader": "^3.0.0",
+    "eslint-plugin-flowtype": "^4.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "flow-bin": "^0.109.0",
+    "flow-runtime": "^0.17.0",
+    "flow-typed": "^2.6.1",
+    "html-webpack-plugin": "^3.2.0",
+    "memoize-one": "^5.1.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-color-rebeccapurple": "^4.0.1",
+    "postcss-loader": "^3.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-dom": "^16.10.2",
+    "regenerator-runtime": "^0.13.3",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
