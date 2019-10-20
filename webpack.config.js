@@ -140,7 +140,7 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve( __dirname, 'dist' ),
+    path: path.resolve( __dirname, 'docs' ),
     filename: '[name].[chunkhash:8].js',
   },
 };
