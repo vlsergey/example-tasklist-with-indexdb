@@ -3,6 +3,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Step0 from './step0';
 import Step01 from './step01';
+import Step1 from './step1';
+import Step2 from './step2';
+import Step3 from './step3';
+import Step4 from './step4';
 
 type StateType = {
   tabIndex : number,
@@ -10,7 +14,11 @@ type StateType = {
 
 const STEPS = [
   { label: 'Шаг 0', reactClass: Step0 },
-  { label: 'Шаг 0.1', reactClass: Step01 },
+  { label: 'Шаг 0.1 (TaskList)', reactClass: Step01 },
+  { label: 'Шаг 1 (IndexedDbRepository)', reactClass: Step1 },
+  { label: 'Шаг 2 (RepositoryListener)', reactClass: Step2 },
+  { label: 'Шаг 3 (DataProvider)', reactClass: Step3 },
+  { label: 'Шаг 4 (connect)', reactClass: Step4 },
 ];
 
 export default class App extends PureComponent<void, StateType> {
