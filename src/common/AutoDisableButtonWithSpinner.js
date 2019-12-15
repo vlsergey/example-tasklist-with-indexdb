@@ -58,7 +58,7 @@ export default class AutoDisableButtonWithSpinner extends PureComponent<PropType
       { actualInProgress && <>
         <Spinner animation="border" aria-hidden="true" as="span" role="status" size="sm" />
         {' '}
-        </> }
+      </> }
       {children}
     </Button>;
   }
